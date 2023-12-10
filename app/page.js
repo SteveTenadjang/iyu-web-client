@@ -11,7 +11,7 @@ export default function Home() {
       const fp = await FingerprintJS.load();
 
       const { visitorId } = await fp.get();
-
+      console.log(await fp.get())
       setFpHash(visitorId);
     };
 
